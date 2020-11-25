@@ -80,6 +80,7 @@ try:
 except KeyError as e:
     LOGGER.error("One or more env variables missing! Exiting now")
     exit(1)
+
 try:
     INDEX_URL = getConfig('INDEX_URL')
     if len(INDEX_URL) == 0:
